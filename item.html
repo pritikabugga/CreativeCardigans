@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardigan Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/CC.png" alt="Creative Cardigans" height="50">
+            </a>
+            <nav>
+                <input type="text" placeholder="Search..." class="search-bar">
+                <a href="items.html">Browse</a>
+                <a href="new.html">Sell</a>
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container text-center mt-5">
+        <div class="item-container shadow-lg p-4">
+            <img id="item-image" class="item-image" alt="Cardigan Image">
+            <div class="item-details">
+                <h2 id="item-title" class="card-title"></h2>
+                <p><strong>Condition:</strong> <span id="item-condition"></span></p>
+                <p><strong>Price:</strong> <span id="item-price"></span></p>
+                <p><strong>Number of Offers:</strong> <span id="item-offers"></span></p>
+                
+                <div class="item-buttons">
+                    <button class="btn btn-primary"><i class="fa-solid fa-pen"></i> Edit</button>
+                    <button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <p>&copy; 2025 Creative Cardigans</p>
+        </div>
+        <div class="footer-right">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

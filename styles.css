@@ -1,0 +1,209 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+/* GENERAL STYLES */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;  
+    margin: 0 10px;
+}
+
+/* MAIN CONTENT */
+main {
+    flex: 1;
+    padding: 80px 20px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ITEMS PAGE (items.html) */
+.items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Ensure all item cards are the same height */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures uniform height */
+}
+
+.card img {
+    max-height: 250px; 
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-link:hover {
+    transform: scale(1.05);
+}
+
+/* ITEM PAGE (item.html) */
+.item-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item-image {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.item-details {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.item-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* NEW PAGE (new.html)*/
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 80px); /* Ensures page fits with footer */
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.left-panel {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+    padding: 30px;
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px; /* Reduced width */
+}
+
+.card {
+    width: 100%;
+    max-width: 350px; /* Decreased size */
+    background: white;
+    padding: 15px; /* Less padding */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .left-panel, .right-panel {
+        max-width: 100%;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: left;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+/* Fix social media icons color */
+.footer .footer-right a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 18px;
+}
